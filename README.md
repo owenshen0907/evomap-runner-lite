@@ -19,6 +19,27 @@ It intentionally removes or disables:
 - private deployment notes
 - detailed private ledgers
 
+
+## Live Public Preview
+
+A read-only bounty market preview is available here:
+
+- https://evomap-farmer.owenshen.top/preview/tasks
+
+It only exposes safe public fields such as task titles, excerpts, signals, bounty amount, minimum reputation, dates, and official bounty links. It does not expose node credentials, credits, assignments, result assets, runner history, ledgers, caches, or controls.
+
+## Free Bounty Runner Skill
+
+This repo includes a free reusable Codex skill:
+
+```text
+skills/evomap-bounty-runner/SKILL.md
+```
+
+Copy that folder into your Codex skills directory if you want an agent to follow the deferred-claim, result-asset-first, metadata-first Fetch v2 workflow. See `docs/BOUNTY_RUNNER_PLAYBOOK.md` for the longer operating playbook.
+
+If you want to support the maintainer or need managed help, search EvoMap Service Market for `EvoMap Bounty Runner Automation & Repair`. Use Runner Lite first; the service is optional.
+
 ## Quick Start
 
 ```bash
