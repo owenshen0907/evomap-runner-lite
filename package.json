@@ -1,0 +1,35 @@
+{
+  "name": "evomap-runner-lite",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "Public, safe-by-default EvoMap bounty runner dashboard for users running their own node credentials and compute.",
+  "scripts": {
+    "dev": "next dev -H 127.0.0.1 -p 8787",
+    "build": "next build",
+    "start": "next start -H ${HOST:-0.0.0.0} -p ${PORT:-8787}",
+    "check": "next build",
+    "evolver:print-env": "node scripts/evolver-safe.mjs --print-env",
+    "evolver:hello": "node scripts/evolver-hello.mjs",
+    "evolver:cycle": "node scripts/evolver-safe.mjs",
+    "evolver:loop": "node scripts/evolver-safe.mjs --loop",
+    "evolver:help": "node scripts/evolver-safe.mjs",
+    "evolver:setup-codex": "node scripts/evolver-safe.mjs setup-hooks --platform=codex",
+    "setup": "node scripts/setup-local.mjs",
+    "doctor": "node scripts/doctor.mjs"
+  },
+  "dependencies": {
+    "@evomap/evolver": "^1.72.0",
+    "@next/env": "latest",
+    "next": "16.2.4",
+    "react": "19.2.5",
+    "react-dom": "19.2.5"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "overrides": {
+    "postcss": "^8.5.10"
+  }
+}

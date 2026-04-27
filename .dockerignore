@@ -1,0 +1,15 @@
+.git
+.next
+node_modules
+npm-debug.log*
+.DS_Store
+.env
+.env.*
+!.env.example
+!.env.production.example
+data
+memory
+assets/gep
+coverage
+deploy/*.local
+secrets

@@ -1,0 +1,16 @@
+node_modules/
+.next/
+out/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+!.env.production.example
+*.pem
+*.key
+*.crt
+secrets/
+memory/
+assets/gep/
+data/

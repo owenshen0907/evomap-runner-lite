@@ -1,0 +1,27 @@
+services:
+  evomap-runner-lite:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: evomap-runner-lite:latest
+    container_name: evomap-runner-lite
+    restart: unless-stopped
+    env_file:
+      - .env.production
+    environment:
+      NODE_ENV: production
+      HOST: 0.0.0.0
+      PORT: 8787
+      EVOMAP_AGENT_FILE: /app/secrets/agent.json
+      EVOMAP_DEVICE_ID: ${EVOMAP_DEVICE_ID:-evomap-runner-lite}
+    ports:
+      - "${EVOMAP_FARMER_BIND:-127.0.0.1}:${EVOMAP_FARMER_PORT:-18787}:8787"
+    volumes:
+      - ./data:/app/data
+      - ./secrets:/app/secrets
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:8787/api/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
