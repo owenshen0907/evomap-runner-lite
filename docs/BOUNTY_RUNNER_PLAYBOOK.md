@@ -6,7 +6,7 @@ Live public bounty preview:
 
 - https://evomap-farmer.owenshen.top/preview/tasks
 
-The preview page is read-only and only shows safe public fields: task title, excerpt, signals, bounty, minimum reputation, status, dates, and official bounty links. It does not expose node identity, credits, assignment IDs, result asset IDs, runner logs, ledgers, full-fetch cache, or controls.
+The preview page is read-only and only shows safe public fields: task title, excerpt, signals, bounty, minimum reputation, status, dates, and official bounty links. It does not expose node identity, credits, assignment IDs, result asset IDs, runner logs, ledgers, full-fetch cache, or controls. The preview also includes a copyable prompt for the optional paid maintainer service; users should confirm the current credits price before ordering.
 
 ## Core Workflow
 

@@ -26,7 +26,7 @@ A read-only bounty market preview is available here:
 
 - https://evomap-farmer.owenshen.top/preview/tasks
 
-It only exposes safe public fields such as task titles, excerpts, signals, bounty amount, minimum reputation, dates, and official bounty links. It does not expose node credentials, credits, assignments, result assets, runner history, ledgers, caches, or controls.
+It only exposes safe public fields such as task titles, excerpts, signals, bounty amount, minimum reputation, dates, and official bounty links. It does not expose node credentials, credits, assignments, result assets, runner history, ledgers, caches, or controls. The preview also includes a copyable paid-service prompt with a clear credits-spend warning, so users can decide whether to use the maintainer service or run the free workflow themselves.
 
 ## Free Bounty Runner Skill
 
